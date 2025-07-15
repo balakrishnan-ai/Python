@@ -1,0 +1,52 @@
+def add(x,y):
+    return x+y
+
+def sub(x,y):
+    return x-y
+
+def mul(x,y):
+    return x*y
+
+def div(x,y):
+    return x/y
+
+def mod(x,y):
+    return x%y
+
+print("Choice : 1=>+ / 2=>- / 3=>* / 4=>/ / 5=>%")
+
+while True:
+
+    ch1=int(input("Enter your choice: "))
+
+    if ch1 in {1,2,3,4,5}:
+        try:
+            sum1=float(input("Enter Val 1: "))
+            sum2=float(input("Enter val 2: "))
+
+        except ValueError:
+            print("Invalid, Enter a number ")
+            continue
+
+        if(ch1==1):
+            print(sum1 ," + ",sum2," = ",add(sum1,sum2))
+
+        elif(ch1==2):
+            print(sum1 ," - ",sum2," = ",sub(sum1,sum2))
+
+        elif(ch1==3):
+            print(sum1 ," X ",sum2," = ",mul(sum1,sum2))
+
+        elif(ch1==4):
+            print(sum1 ," / ",sum2," = ",div(sum1,sum2))
+
+        elif(ch1==5):
+            print(sum1 ," % ",sum2," = ",mod(sum1,sum2))
+
+    next_calc=input("Enter next calculation say(y/n)")
+    if next_calc in "n":
+        break
+
+    else:
+        print("Invalid")
+        
