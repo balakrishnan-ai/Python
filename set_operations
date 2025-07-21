@@ -74,3 +74,33 @@ print(nonZeroValue)
 nonZeroValue1=any(set3)
 print(nonZeroValue1)
 
+my_set={1,2,3,4,5}  # Using Curly Braces
+print(my_set)
+
+my_set1=set([6,7,8,9,10])  # Using set() function
+print(my_set1)
+
+dupli_set={1,2,2,3,3,4,5,5} # Duplicate Elements its automatically remove
+print(dupli_set)
+
+mixed_set={1,"hello",(1,2,3)} # Its using mixed the data_types values
+print(mixed_set)
+
+
+add_set={1,2,3,3}
+
+add_set.add(4)  # Adding new Elements in a set
+print(add_set)
+
+add_set.remove(3)  # Removing Elements from a set
+print(add_set)
+
+add_set.discard(2)  # Discard() function using removing elements from a set
+print(add_set)
+
+# Its a searching the elements in using "in" keyword
+My_Set={1,2,3,4}
+if 2 in My_Set:
+    print("2 is present in the set")
+else:
+    print("2 is not present in the set")
