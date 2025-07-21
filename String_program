@@ -1,0 +1,53 @@
+var1="Hello world"
+var2="Python Programming"
+
+#Length String
+print("Length: ",len(var2))
+
+#Access Strings
+print("var1[0]",var1[0])
+print("var2[1:5]",var2[1:5])
+
+#Updating String
+print("Updating String ",var1[0:6] + "Python")
+
+#Find the index of a char in a string in python
+print("Original String  val : ",var1)
+char="d"
+print("Find the char : ",char)
+print("The char index value : ",var1.find(char))
+
+#Find Frequency of a char in a string in python using count() method
+chart=input("Enter a char: ")
+print("The Position is : ",var1.count(chart))
+
+#Find the number of spaces
+var3=''' Pages you view in this window won't appear in the browser history
+and they won't leave other traces, like cookies, on the computer after
+you close all open Guest windows.
+Any files you download will be preserved, however.'''
+print(var3)
+print(var3.count(" "))
+
+#Split String
+print("Split using space : ",var1.split(' '))
+print("Split error function : ",var1.split('z'))
+
+#Repeating String
+print("Repeating : \n",(var1 * 5))
+
+#Replace String
+print("Replace String : ",var1.replace("Hello","GoodBye"))
+
+#Changing case value
+print("Original String : ",var2)
+print("Upper case : ",var2.upper())
+print("Lower case : ",var2.lower())
+print("Title : ",var2.title())
+print("Capitalize : ",var2.capitalize())
+print("Swap Case : ",var2.swapcase())
+
+#Reverse String
+print(' '.join(reversed(var1)))
+
+
