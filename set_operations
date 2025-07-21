@@ -1,0 +1,76 @@
+set1 ={1,2,3,4,5}
+set2={4,5,6,7,8}
+set3={1,2,3}
+
+print(f"set1 : ",set1)
+print(f"set2 : ",set2)
+print(f"set3 : ",set3)
+
+# It  cannot access duplicate values and its join the 2 sets
+union_set=set1.union(set2)
+print(f"union : ",union_set)
+
+# Its a compare 2 sets and its same number its comes is known as intersection
+intersection_set=set1.intersection(set2)
+print(f"Intersection: ",intersection_set)
+
+# Its a compare 2 sets and its same number its cannot display is known as difference
+difference_set1_2=set1.difference(set2)
+print(f"Difference: ",difference_set1_2)
+
+# Its a compare 2 sets and its same number its cannot be display and its another format
+difference_set2_1=set2.difference(set1)
+print(f"Another type: ",difference_set2_1)
+
+# Its a compare 2 sets and its same number its cannot display but another number is display
+symmetric_difference_set=set1.symmetric_difference(set2)
+print(f"Symmetric difference set: ",symmetric_difference_set)
+
+# All element of set1 are present in set3
+is_subset=set1.issubset(set3)
+print(f"Is Subset: ",is_subset)
+
+# All element of set3 are present in set1
+is_subset1=set3.issubset(set1)
+print(f"Is Subset 3 - 1 : ",is_subset1)
+
+# Its a opposite of subset
+is_superset=set1.issuperset(set2)
+print(f"Super set (format1): ",is_superset)
+
+# Another format
+is_superset1=set1.issuperset(set3)
+print(f"Superset (format2): ",is_superset1)
+
+#Anther type
+is_superset2=set1 >= set3
+print(f"Superset (Another type): ",is_superset2)
+
+# Common elements are come is display the false
+is_disjoint=set1.isdisjoint(set3)
+print(is_disjoint)
+
+# Its showable a minimum value of set1
+minimum=min(set1)
+print(minimum)
+
+# Its showable a maximum value of set1
+maximum=max(set1)
+print(maximum)
+
+# Its Addition the set1 inside all number and its display the total
+total=sum(set1)
+print(total)
+
+# Its check the how many numbers you give and its doesn't check the index value
+length=len(set2)
+print(length)
+
+# Its check all values set3 inside the zero values contain ('0' -> false | '!0' -> True)
+nonZeroValue=all(set3)
+print(nonZeroValue)
+
+# Its check any values set3 inside the zero values contain ('0' ->false | '!0' -> True)
+nonZeroValue1=any(set3)
+print(nonZeroValue1)
+
